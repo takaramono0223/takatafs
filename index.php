@@ -11,7 +11,7 @@
     <title></title>
   </head>
   <body>
-<!-- 로고a -->
+<!-- 로고 -->
     <div class="row pt-5">
       <div class="col-4">
       </div>
@@ -25,7 +25,7 @@
     <hr>
 <!-- 메뉴바 -->
     <nav class="nav nav-pills nav-fill">
-      <a class="nav-item nav-link disabled" href="#">바다낚시대</a>
+      <a class="nav-item nav-link disabled" href="#">낚시대</a>
       <a class="nav-item nav-link disabled" href="#">민물낚시대</a>
       <a class="nav-item nav-link disabled" href="#">바다 릴</a>
       <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">민물 릴</a>
