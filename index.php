@@ -10,53 +10,77 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"      rel="stylesheet">
     <title></title>
   </head>
-  <body>
-<!-- 로고 -->
-    <div class="row pt-5">
-      <div class="col-4">
-      </div>
-      <div class="col-4">
-        <img src="img/logo1.jpg">
-      </div>
-      <div class="col-4">
-        <a href="#">LOGIN</a> <a href="#">JOIN US</a>
-      </div>
-    </div>
-    <hr>
-<!-- 메뉴바 -->
-    <nav class="nav nav-pills nav-fill">
-      <a class="nav-item nav-link disabled" href="#">낚시대</a>
-      <a class="nav-item nav-link disabled" href="#">민물낚시대</a>
-      <a class="nav-item nav-link disabled" href="#">바다 릴</a>
-      <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">민물 릴</a>
-    </nav>
-<!-- 슬라이드배너 -->
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="..." class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
 
+  <body>
+    <div class="row pt-5">
+      <!-- 좌측여백 -->
+      <div class="col-1 bg-danger">
+      </div>
+      <!-- 본문 -->
+      <div class="col-10 bg-light">
+        <!-- 로고 -->
+        <div class="row">
+          <div class="col-2 bg-info">
+          </div>
+          <div class="col-8 bg-primary">
+            <img src="img/logo1.jpg">
+          </div>
+          <div class="col-2 bg-info">
+            <a href="#">LOGIN</a> <a href="#">JOIN US</a>
+          </div>
+        </div>
+        <hr>
+        <!-- 메뉴바 -->
+        <nav class="nav nav-pills nav-fill">
+          <a class="nav-item nav-link disabled" href="#">낚시대</a>
+          <a class="nav-item nav-link disabled" href="#">릴</a>
+          <a class="nav-item nav-link disabled" href="#">바늘</a>
+          <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">줄</a>
+        </nav>
+        <!-- 슬라이드배너 -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/banner1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="img/banner3.jpg" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <br>
+        <div id="footer">
+          <div class="row bg-secondary">
+            <div class="col-3">
+              <img src="img/logo2.jpg"><br>
+            </div>
+            <div class="col-9">
+            다나까피싱<br>
+            Tel : 03-123-4567<br>
+            월~금 09:00~20:00<br>
+          </div>
+          Copyright © tanakafishing. All rights reserved.
+        </div>
+      </div>
+      <!-- 우측여백 -->
+      <div class="col-1 bg-warning">
+      </div>
+    </div>
   </body>
 </html>
