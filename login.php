@@ -27,7 +27,7 @@
             <!-- 로고 누르면 인텍스로 돌아가기 -->
           </div>
           <div class="col-2 bg-info">
-            <a href="login.php">LOGIN</a> <a href="#">JOIN US</a>
+          <a href="index.php">HOME</a> <a href="login.php">LOGIN</a> <a href="#">JOIN US</a>
           </div>
         </div>
         <hr>
