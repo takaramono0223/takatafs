@@ -27,7 +27,7 @@
         <div class="col-2 bg-info">
         </div>
         <div class="col-8 bg-primary" style="position:relative; text-align:center; width:100%;">
-          <img src="img/logo1.jpg">
+          <a href="index.php"><img src="img/logo1.jpg" >
         </div>
         <div class="col-2 bg-info" style="position:relative; text-align:bottom;">
           <a href="index.php">HOME</a> <a href="login.php">LOGIN</a> <a href="register.php">JOIN US</a>
