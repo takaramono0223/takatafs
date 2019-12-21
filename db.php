@@ -5,7 +5,7 @@ $db="register";  //데이터베이스명
 $url="localhost";  //ip
 
 
-// DB접속 처리
+// DB접속 처리 ㅎㅎ
 
 $conn= new mysqli($url,$id,$password,$db);
 //한글 표시를 위해 인코딩을 utf8로 변경
