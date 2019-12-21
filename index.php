@@ -28,7 +28,7 @@
             <img src="img/logo1.jpg">
           </div>
           <div class="col-2 bg-info" style="position:relative; text-align:bottom;">
-            <a href="login.php">LOGIN</a> <a href="#">JOIN US</a>
+            <a href="index.php">HOME</a> <a href="login.php">LOGIN</a> <a href="register.php">JOIN US</a>
           </div>
         </div>
         <hr>
@@ -39,6 +39,7 @@
           <a class="nav-item nav-link disabled" href="#">바늘</a>
           <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">줄</a>
         </nav>
+        <hr>
         <!-- 슬라이드배너 -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
