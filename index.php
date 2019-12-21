@@ -27,13 +27,8 @@
           <div class="col-8 bg-primary" style="position:relative; text-align:center; width:100%;">
             <img src="img/logo1.jpg">
           </div>
-<<<<<<< HEAD
-          <div class="col-2 bg-info">
-            <a href="login.php">LOGIN</a> <a href="#">JOIN US</a>
-=======
           <div class="col-2 bg-info" style="position:relative; text-align:bottom;">
-            <a href="#">LOGIN</a> <a href="#">JOIN US</a>
->>>>>>> 8c5cdfd48fafe0351b8288668c760f83e1b8dccc
+            <a href="login.php">LOGIN</a> <a href="#">JOIN US</a>
           </div>
         </div>
         <hr>
