@@ -23,7 +23,8 @@
           <div class="col-2 bg-info">
           </div>
           <div class="col-8 bg-primary">
-            <img src="img/logo1.jpg">
+            <a href="index.php"><img src="img/logo1.jpg" >
+            <!-- 로고 누르면 인텍스로 돌아가기 -->
           </div>
           <div class="col-2 bg-info">
             <a href="login.php">LOGIN</a> <a href="#">JOIN US</a>
@@ -37,50 +38,43 @@
           <a class="nav-item nav-link disabled" href="#">바늘</a>
           <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">줄</a>
         </nav>
-        <!-- 슬라이드배너 -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="img/banner1.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/banner2.jpg" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="img/banner3.jpg" class="d-block w-100" alt="...">
+
+
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="card-group">
+              <div class="card-body">
+                <h4 class="card-title">로그인하기</h4>
+                <div class="form-group">
+                  <small id="IDHelp" class="form-text text-muted">가입하신 아이디와 비밀번호를 입력해주세요.</small>
+                  <label for="IDInPut"></label>
+                  <input type="text" class="form-control col-md-8" id="IDInPut" placeholder="아이디">
+                  <label for="PWInPut"></label>
+                  <input type="password" class="form-control col-md-8" id="PWInPut" placeholder="비밀번호">
+                  <small id="PWHelp" class="text-muted">비밀번호는 최대 20자까지 가능</small>
+                 </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="check1">아이디 저장</label>
+                </div>
+                <a href="#" class="btn btn-primary btn-lg col-md-8">로그인</a>
+              </div>
             </div>
           </div>
-          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <br>
-        <div id="footer">
-          <div class="row bg-secondary">
-            <div class="col-3">
-              <img src="img/logo2.jpg"><br>
+
+
+          <div class="col-sm-4">
+            <div class="card-group">
+              <div class="card-body">
+                <h4 class="card-title">회원가입하기</h4>
+                <small id="PWHelp" class="text-muted">회원가입하시고 편리하게 이용하세요!</small>
+                <br><br><a href="#" class="btn btn-primary btn-lg col-md-8">회원가입하러가기</a>
+              </div>
             </div>
-            <div class="col-9">
-            다나까피싱<br>
-            Tel : 03-123-4567<br>
-            월~금 09:00~20:00<br>
           </div>
-          Copyright © tanakafishing. All rights reserved.
         </div>
-      </div>
-      <!-- 우측여백 -->
-      <div class="col-1 bg-warning">
-      </div>
-    </div>
-  </body>
+
+
+
+
 </html>
