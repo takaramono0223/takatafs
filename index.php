@@ -15,28 +15,23 @@
   <body>
     <div class="row pt-5">
       <!-- 좌측여백 -->
-      <div class="col-1 bg-danger">
+      <div class="col-2">
       </div>
-
       <!-- 본문 -->
-      <div class="col-10 bg-light">
+      <div class="col-8">
+        <!-- 우상단메뉴 -->
+        <div class="col-12" style="position:relative; text-align:right;">
+          <a href="index.php">HOME</a> <a href="login.php">LOGIN</a> <a href="register.php">JOIN</a>
+        </div>
         <!-- 로고 -->
-        <div class="row">
-          <div class="col-2 bg-info">
-          </div>
-          <div class="col-8 bg-primary" style="position:relative; text-align:center; width:100%;">
-            <img src="img/logo.jpg">
-          </div>
-          <div class="col-2 bg-info" style="position:relative; text-align:bottom;">
-            <a href="index.php">HOME</a> <a href="login.php">LOGIN</a> <a href="register.php">JOIN US</a>
-          </div>
+        <div class="col-12" style="position:relative; text-align:center; width:100%;">
+          <img src="img/logo.jpg">
         </div>
         <hr>
         <!-- 메뉴바 -->
         <nav class="nav nav-pills nav-fill">
           <a class="nav-item nav-link disabled" href="#">낚시대</a>
           <a class="nav-item nav-link disabled" href="#">릴</a>
-          <a class="nav-item nav-link disabled" href="#">바늘</a>
           <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">줄</a>
         </nav>
         <hr>
@@ -68,58 +63,94 @@
           </a>
         </div>
         <br>
+        <hr>
         <!-- 베스트아이템 -->
-        <button id="item1">BEST ITEM</button><br>
-        <hr>
-        <br>
         <div class="row">
-          <div class="col-4 bg-danger">
-            사진1
-          </div>
-          <div class="col-4 bg-success">
-            사진2
-          </div>
-          <div class="col-4 bg-primary">
-            사진3
+          <div class"col-12">
+          BEST ITEM
           </div>
         </div>
         <br>
-
+          <div class="row mx-auto">
+            <div class="card col-6 col-md-4" style="width: 18rem;">
+              <img src="img/best1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">갤럭시 휘</h5>
+                <p class="card-text">민물민대</p>
+                <a href="http://edif.co.kr/bada_01/1607" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card col-6 col-md-4" style="width: 18rem;">
+              <img src="img/best2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">체어맨 석권</h5>
+                <p class="card-text">민물민대</p>
+                <a href="http://edif.co.kr/minmul_01/16866" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card col-6 col-md-4" style="width: 18rem;">
+              <img src="img/best3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">COLINDEAN 콜린딘</h5>
+                <p class="card-text">베스루어대</p>
+                <a href="http://edif.co.kr/minmul_06/2347" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        <br>
+        <hr>
         <!-- 신규아이템 -->
-        <button id="item2">NEW ITEM</button><br>
-        <hr>
-        <br>
         <div class="row">
-          <div class="col-4 bg-danger">
-            사진1
-          </div>
-          <div class="col-4 bg-success">
-            사진2
-          </div>
-          <div class="col-4 bg-primary">
-            사진3
+          <div class"col-12">
+            NEW ITEM
           </div>
         </div>
         <br>
-
+          <div class="row mx-auto">
+            <div class="card col-6 col-md-4" style="width: 18rem;">
+              <img src="img/new1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">갤럭시 휘 골드 이소</h5>
+                <p class="card-text">바다릴대</p>
+                <a href="http://edif.co.kr/bada_01/16762" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card col-6 col-md-4" style="width: 18rem;">
+              <img src="img/new2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">체어맨 흑경 골드</h5>
+                <p class="card-text">민물민대</p>
+                <a href="http://edif.co.kr/minmul_01/16866" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+            <div class="card col-6 col-md-4" style="width: 18rem;">
+              <img src="img/new3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">죽검</h5>
+                <p class="card-text">바다릴대</p>
+                <a href="http://edif.co.kr/bada_01/1607" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+        <br>
+        <!-- 하단고정 -->
+        <div id="footer">
+          <div class="row bg-light">
+            <div class="col-10">
+              상호명 : 다나까피싱 / 대표이사 : 임연식<br>
+              주소 : 서울특별시 영등포구 가마산로 315 1층 / 사업자등록번호 : 108-13-74543<br>
+              통신판매업신고 : 제 2015-서울영등포-1455호 / 대표전화 : 02-846-9895 / FAX : 070-7779-9895<br>
+              개인정보책임자 : 임연식(dawoo63@hanmail.net)<br>
+              Copyright © danakafishing. All rights reserved.
+            </div>
+            <div class="col-2">
+              <img src="#">
+            </div>
+          </div>
+        </div>
       <!-- 우측여백 -->
-      <div class="col-1 bg-warning">
+      <div class="col-2">
       </div>
-    </div>
     <br>
-
-    <!-- 하단고정 -->
-    <div id="footer">
-      <div class="row bg-secondary">
-        <div class="col-3">
-          <img src="img/logo2.jpg"><br>
-        </div>
-        <div class="col-9">
-          다나까피싱<br>
-          Tel : 03-123-4567<br>
-          월~금 09:00~20:00<br>
-        </div>
-        Copyright © tanakafishing. All rights reserved.
-      </div>
   </body>
 </html>
