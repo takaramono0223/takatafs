@@ -1,11 +1,8 @@
-#item1 {
-  position: absolute;
-  left : 50%;
-  top : 738px;
-}
+html { font-size: 62.5%; }
+body { font-size: 1em;}
 
-#item2 {
-  position: absolute;
-  left : 50%;
-  top : 1000px;
+@media screen and (min-width:600px){
+  .card-title{
+    font-size: 8rem!important;
+  }
 }
