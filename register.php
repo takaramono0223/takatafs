@@ -28,7 +28,7 @@
         </div>
         <!-- 로고 -->
         <div class="col-12" style="position:relative; text-align:center; width:100%;">
-          <img src="img/logo.jpg">
+          <a href="index.php"><img src="img/logo.jpg"></a>
         </div>
         <hr>
         <!-- 메뉴바 -->
@@ -38,6 +38,7 @@
           <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">줄</a>
         </nav>
         <hr>
+        <br>
 
         <!-- 회원가입  -->
 	<form method="post" class="container" action="member_ok.php">
@@ -56,6 +57,7 @@
 
 
 	</form>
+  <br><br>
   <!-- 하단고정 -->
   <div id="footer">
     <div class="row bg-light">
@@ -67,13 +69,13 @@
         Copyright © danakafishing. All rights reserved.
       </div>
       <div class="col-2">
-        <img src="#">
+        <img src="img/logo1.jpg">
       </div>
     </div>
   </div>
 <!-- 우측여백 -->
 <div class="col-2">
 </div>
-<br><br>
+<br>
 </body>
 </html>
