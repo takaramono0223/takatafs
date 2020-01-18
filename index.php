@@ -77,7 +77,7 @@
               <div class="card-body">
                 <h5 class="card-title">갤럭시 휘</h5>
                 <p class="card-text">민물민대</p>
-                <a href="http://edif.co.kr/bada_01/1607" class="btn btn-primary">Go somewhere</a>
+                <a href="detail.php" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
             <div class="card col-6 col-md-4" style="width: 18rem;">
@@ -133,21 +133,20 @@
             </div>
           </div>
         <br>
-        <!-- 하단고정 -->
-        <div id="footer">
-          <div class="row bg-light">
-            <div class="col-10">
-              상호명 : 다나까피싱 / 대표이사 : 임연식<br>
-              주소 : 서울특별시 영등포구 가마산로 315 1층 / 사업자등록번호 : 108-13-74543<br>
-              통신판매업신고 : 제 2015-서울영등포-1455호 / 대표전화 : 02-846-9895 / FAX : 070-7779-9895<br>
-              개인정보책임자 : 임연식(dawoo63@hanmail.net)<br>
-              Copyright © danakafishing. All rights reserved.
-            </div>
-            <div class="col-2">
-              <img src="#">
-            </div>
+        <!-- 하단메뉴 -->
+        <div class="row bg-light p-3">
+          <div class="col-8" style="text: seocondary;">
+            상호명 : 다나까피싱<br>
+            주소 : 서울특별시 영등포구 가마산로 315 1층<br>
+            통신판매업신고 : 제 2015-서울영등포-1455호 / 사업자등록번호 : 108-13-74543<br>
+            대표전화 : 02-846-9895 / FAX : 070-7779-9895<br>
+            Copyright © danakafishing. All rights reserved.
+          </div>
+          <div class="col-4" style="position:relative; text-align:center; width:100%;">
+            <img src="img/logo1.jpg">
           </div>
         </div>
+      </div>
       <!-- 우측여백 -->
       <div class="col-2">
       </div>
