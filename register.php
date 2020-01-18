@@ -11,6 +11,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"      rel="stylesheet">
+    <script src="js/signin.js"></script>
+
     <link rel="stylesheet" href="../css/style.css">
     <title></title>
   </head>
@@ -41,19 +43,27 @@
         <br>
 
         <!-- 회원가입  -->
-	<form method="post" class="container" action="member_ok.php">
+	<form method="post" class="container" action="member_ok.php" onsubmit="return inputcheck()" >
 
 		<h1>Register</h1><hr></hr>
    <div class="container"  text-align: center;>
-      <input class="form-control w-50" type="text" size="35" name="name" placeholder="이름"><br>
-      <input class="form-control w-50" type="password" size="35" name="userpw" placeholder="패스워드"><br>
-      <input class="form-control w-50" type="text" size="35" name="userid" placeholder="아이디"><br>
-      <input class="form-control w-50" type="text" size="13" name="zipcode" placeholder=" - 제외"><br>
-      <input class="form-control w-50" type="text" size="35" name="address" placeholder="주소"><br>
-      <input class="form-control w-50" type="text" size="35" name="tel" placeholder="전화번호"><br>
-      <input class="form-control w-50" type="text" size="35" name="email"><br>
+      NAME:<input class="form-control w-50" type="text" size="35" name="name" placeholder="2~5자 한글만 입력" required>
+      ID:
+      <input class="form-control w-50" type="text" size="35" id='id' name="userid"  placeholder="4~10자 영소문자와 숫자로만 입력" required>
+      PASSWORD:<br>
+      <input class="form-control w-50" type="password" size="35" id='password' name="userpw" placeholder="8~12자 영대소문자와 숫자, 특수문자로만 입력" required>
+      zipcode:<br>
+      <input class="form-control w-50" type="text" size="13" name="zipcode" placeholder=" - 제외" required>
+      address:<br>
+      <input class="form-control w-50" type="text" size="35" name="address" placeholder="주소" required>
+      TEL:<br>
+      <input class="form-control w-50" type="text" size="35" name="tel" placeholder="- 제외" required>
+      E-mail:<br>
+      <input class="form-control w-50" type="text" size="35" name="email" required>
       <input type="submit"  class="btn btn-primary" value="Register" >
     </div>
+
+    <div id="msg"></div>
 
 
 	</form>
