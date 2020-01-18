@@ -11,14 +11,28 @@
     <link rel="stylesheet" href="css/style.css">
     <title></title>
     <style>
-    .card-title{
-      font-size: 1rem;
-    }
-    @media screen and (min-width:600px){
-      .card-title{
-        font-size: 1.5rem;
+      .card {
+        border: 0px!important;
       }
-    }
+      .card-title {
+        font-size: 1rem;
+      }
+      @media screen and (min-width:600px) {
+        .card-title {
+          font-size: 1.5rem;
+        }
+      }
+      .card-text {
+        font-size: 0.8rem;
+      }
+      @media screen and (min-width:600px) {
+        .card-text {
+          font-size: 1rem;
+        }
+      }
+
+
+
     </style>
   </head>
 
@@ -83,27 +97,24 @@
         <br>
           <div class="row mx-auto">
             <div class="card col-6 col-md-4">
-              <img src="img/best1.jpg" class="card-img-top" alt="...">
+              <a href="detail.php"><img src="img/best1.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title">갤럭시 휘</h5>
                 <p class="card-text">민물민대</p>
-                <a href="detail.php" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
             <div class="card col-6 col-md-4">
-              <img src="img/best2.jpg" class="card-img-top" alt="...">
+              <a href="http://edif.co.kr/minmul_01/16866"><img src="img/best2.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title">체어맨 석권</h5>
                 <p class="card-text">민물민대</p>
-                <a href="http://edif.co.kr/minmul_01/16866" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
             <div class="card col-6 col-md-4">
-              <img src="img/best3.jpg" class="card-img-top" alt="...">
+              <a href="http://edif.co.kr/minmul_06/2347"><img src="img/best3.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title">COLINDEAN 콜린딘</h5>
                 <p class="card-text">베스루어대</p>
-                <a href="http://edif.co.kr/minmul_06/2347" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
           </div>
@@ -118,27 +129,24 @@
         <br>
           <div class="row mx-auto">
             <div class="card col-6 col-md-4">
-              <img src="img/new1.jpg" class="card-img-top" alt="...">
+              <a href="http://edif.co.kr/bada_01/16762"><img src="img/new1.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
-                <p class="card-title">갤럭시 휘 골드 이소</p>
+                <h5 class="card-title">갤럭시 휘 골드 이소</h5>
                 <p class="card-text">바다릴대</p>
-                <a href="http://edif.co.kr/bada_01/16762" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
             <div class="card col-6 col-md-4">
-              <img src="img/new2.jpg" class="card-img-top" alt="...">
+              <a href="http://edif.co.kr/minmul_01/16866"><img src="img/new2.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title">체어맨 흑경 골드</h5>
                 <p class="card-text">민물민대</p>
-                <a href="http://edif.co.kr/minmul_01/16866" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
             <div class="card col-6 col-md-4">
-              <img src="img/new3.jpg" class="card-img-top" alt="...">
+              <a href="http://edif.co.kr/bada_01/1607"><img src="img/new3.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
                 <h5 class="card-title">죽검</h5>
                 <p class="card-text">바다릴대</p>
-                <a href="http://edif.co.kr/bada_01/1607" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
           </div>
