@@ -8,8 +8,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"      rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <title></title>
+    <style>
+    .card-title{
+      font-size: 1rem;
+    }
+    @media screen and (min-width:600px){
+      .card-title{
+        font-size: 1.5rem;
+      }
+    }
+    </style>
   </head>
 
   <body>
@@ -26,10 +36,14 @@
         <!-- 로고 -->
         <div class="col-12" style="position:relative; text-align:center; width:100%;">
 <<<<<<< HEAD
+<<<<<<< HEAD
         <img src="img/logo.jpg" href="index.php">
 =======
           <a href="index.php"><img src="img/logo.jpg"></a>
 >>>>>>> 8d133670084bad5677a188be357ea7bbc9797b3b
+=======
+          <a href="index.php"><img src="img/logo.jpg"></a>
+>>>>>>> 016e54cf0ceb473d661e4ce555bc78578ecdd0c2
         </div>
         <hr>
         <!-- 메뉴바 -->
@@ -76,7 +90,7 @@
         </div>
         <br>
           <div class="row mx-auto">
-            <div class="card col-6 col-md-4" style="width: 18rem;">
+            <div class="card col-6 col-md-4">
               <img src="img/best1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">갤럭시 휘</h5>
@@ -84,7 +98,7 @@
                 <a href="detail.php" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
-            <div class="card col-6 col-md-4" style="width: 18rem;">
+            <div class="card col-6 col-md-4">
               <img src="img/best2.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">체어맨 석권</h5>
@@ -92,7 +106,7 @@
                 <a href="http://edif.co.kr/minmul_01/16866" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
-            <div class="card col-6 col-md-4" style="width: 18rem;">
+            <div class="card col-6 col-md-4">
               <img src="img/best3.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">COLINDEAN 콜린딘</h5>
@@ -111,15 +125,15 @@
         </div>
         <br>
           <div class="row mx-auto">
-            <div class="card col-6 col-md-4" style="width: 18rem;">
+            <div class="card col-6 col-md-4">
               <img src="img/new1.jpg" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">갤럭시 휘 골드 이소</h5>
+                <p class="card-title">갤럭시 휘 골드 이소</p>
                 <p class="card-text">바다릴대</p>
                 <a href="http://edif.co.kr/bada_01/16762" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
-            <div class="card col-6 col-md-4" style="width: 18rem;">
+            <div class="card col-6 col-md-4">
               <img src="img/new2.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">체어맨 흑경 골드</h5>
@@ -127,7 +141,7 @@
                 <a href="http://edif.co.kr/minmul_01/16866" class="btn btn-primary">Go somewhere</a>
               </div>
             </div>
-            <div class="card col-6 col-md-4" style="width: 18rem;">
+            <div class="card col-6 col-md-4">
               <img src="img/new3.jpg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">죽검</h5>
@@ -137,6 +151,8 @@
             </div>
           </div>
         <br>
+
+
         <!-- 하단메뉴 -->
         <div class="row bg-light p-3">
           <div class="col-8" style="text: seocondary;">
