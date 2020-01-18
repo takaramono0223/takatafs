@@ -18,31 +18,28 @@
   <body>
     <div class="row pt-5">
       <!-- 좌측여백 -->
-      <div class="col-1 bg-danger">
+      <div class="col-2">
       </div>
-
       <!-- 본문 -->
-      <div class="col-10 bg-light">
+      <div class="col-8">
+        <!-- 우상단메뉴 -->
+        <div class="col-12" style="position:relative; text-align:right;">
+          <a href="index.php">HOME</a> <a href="login.php">LOGIN</a> <a href="register.php">JOIN</a>
+        </div>
         <!-- 로고 -->
-        <div class="row">
-          <div class="col-2 bg-info">
-          </div>
-          <div class="col-8 bg-primary" style="position:relative; text-align:center; width:100%;">
-            <img src="img/logo.jpg">
-          </div>
-          <div class="col-2 bg-info" style="position:relative; text-align:bottom;">
-            <a href="index.php">HOME</a> <a href="login.php">LOGIN</a> <a href="register.php">JOIN US</a>
-          </div>
+        <div class="col-12" style="position:relative; text-align:center; width:100%;">
+          <a href="index.php"><img src="img/logo.jpg"></a>
         </div>
         <hr>
         <!-- 메뉴바 -->
         <nav class="nav nav-pills nav-fill">
           <a class="nav-item nav-link disabled" href="#">낚시대</a>
           <a class="nav-item nav-link disabled" href="#">릴</a>
-          <a class="nav-item nav-link disabled" href="#">바늘</a>
           <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">줄</a>
         </nav>
         <hr>
+        <br>
+
         <!-- 회원가입  -->
 	<form method="post" class="container" action="member_ok.php">
 
@@ -60,24 +57,25 @@
 
 
 	</form>
-  <!-- 우측여백 -->
-  <div class="col-1 bg-warning">
+  <br><br>
+  <!-- 하단고정 -->
+  <div id="footer">
+    <div class="row bg-light">
+      <div class="col-10">
+        상호명 : 다나까피싱 / 대표이사 : 임연식<br>
+        주소 : 서울특별시 영등포구 가마산로 315 1층 / 사업자등록번호 : 108-13-74543<br>
+        통신판매업신고 : 제 2015-서울영등포-1455호 / 대표전화 : 02-846-9895 / FAX : 070-7779-9895<br>
+        개인정보책임자 : 임연식(dawoo63@hanmail.net)<br>
+        Copyright © danakafishing. All rights reserved.
+      </div>
+      <div class="col-2">
+        <img src="img/logo1.jpg">
+      </div>
+    </div>
   </div>
+<!-- 우측여백 -->
+<div class="col-2">
 </div>
 <br>
-
-<!-- 하단고정 -->
-<div id="footer">
-  <div class="row bg-secondary">
-    <div class="col-3">
-      <img src="img/logo2.jpg"><br>
-    </div>
-    <div class="col-9">
-      다나까피싱<br>
-      Tel : 03-123-4567<br>
-      월~금 09:00~20:00<br>
-    </div>
-    Copyright © tanakafishing. All rights reserved.
-  </div>
 </body>
 </html>

@@ -25,7 +25,11 @@
         </div>
         <!-- 로고 -->
         <div class="col-12" style="position:relative; text-align:center; width:100%;">
-          <img src="img/logo.jpg">
+<<<<<<< HEAD
+        <img src="img/logo.jpg" href="index.php">
+=======
+          <a href="index.php"><img src="img/logo.jpg"></a>
+>>>>>>> 8d133670084bad5677a188be357ea7bbc9797b3b
         </div>
         <hr>
         <!-- 메뉴바 -->
