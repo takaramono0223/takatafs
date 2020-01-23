@@ -44,7 +44,7 @@ $row = $result->fetch_assoc();
         </div>
         <!-- 로고 -->
         <div class="col-12" style="position:relative; text-align:center; width:100%;">
-          <img src="img/logo.jpg">
+          <a href="index.php"><img src="img/logo.jpg"></a>
         </div>
         <hr>
         <!-- 메뉴바 -->
@@ -57,26 +57,32 @@ $row = $result->fetch_assoc();
         <!-- 상품상세 -->
         <section class="container">
           <div class="row">
-            <div class="col-6">
-              <img src="<?php echo $row['image'] ?>" width="100%">
+            <div class="col-7">
+              <img src="<?php echo $row['image'] ?>" width="70%">
             </div>
-            <div class="col-6">
-               <h4><?php echo $row['products_name'] ?></h4><br>
-               <?php echo $row['products_detail'] ?><br><br>
-               price : <del><?php echo $row['price'] ?>원</del><br>
-               sale price : <?php echo $row['sale_price'] ?>원<br><br>
-               <select class="form-control col-5" name="">
-                 <option value="">수량을 선택하세요</option>
-                 <option value="">1</option>
-                 <option value="">2</option>
-                 <option value="">3</option>
-                 <option value="">4</option>
-                 <option value="">5</option>
-               </select><br>
-               <a href="#" class="btn btn-info"> <i class="material-icons">check_box</i> 바로구매 </a>
-               <a href="cart.php?products_name=<?= $row['products_name'] ?>&price=<?= $row['price'] ?>" class="btn btn-info"> <i class="material-icons">shopping_cart</i> 카트에담기 </a>
+            <div class="col-5">
+              <br>
+              <h4><?php echo $row['products_name'] ?></h4><br>
+              price : <del><?php echo $row['price'] ?>원</del><br>
+              sale price : <?php echo $row['sale_price'] ?>원<br><br>
+              <select class="form-control col-5" name="">
+               <option value="">수량을 선택하세요</option>
+               <option value="">1</option>
+               <option value="">2</option>
+               <option value="">3</option>
+               <option value="">4</option>
+               <option value="">5</option>
+              </select>
+              <br><br>
+              <a href="#" class="btn btn-info"> <i class="material-icons">check_box</i> 바로구매 </a>
+              <a href="cart.php?products_name=<?= $row['products_name'] ?>&price=<?= $row['price'] ?>" class="btn btn-info"> <i class="material-icons">shopping_cart</i> 카트에담기 </a>
             </div>
           </div>
+          <br><hr><br>
+          <div class="col-12 text-center">
+            <img src="<?php echo $row['products_detail'] ?>" width="85%">
+          </div>
+        </section>
 
 
 

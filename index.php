@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -30,8 +31,6 @@
           font-size: 1rem;
         }
       }
-
-
 
     </style>
   </head>
@@ -88,14 +87,20 @@
         </div>
         <br>
         <hr>
+
         <!-- 베스트아이템 -->
         <div class="row">
-          <div class"col-12">
-          BEST ITEM
+          <div class="col-12 text-center">
+            BEST ITEM
           </div>
         </div>
         <br>
-          <div class="row mx-auto">
+
+        <section id="products">
+          <?php include 'service/product.php'; ?>
+        </section>
+
+          <!-- <div class="row mx-auto">
             <div class="card col-6 col-md-4">
               <a href="detail.php"><img src="img/best1.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
@@ -117,17 +122,22 @@
                 <p class="card-text">베스루어대</p>
               </div>
             </div>
-          </div>
+          </div> -->
         <br>
         <hr>
         <!-- 신규아이템 -->
         <div class="row">
-          <div class"col-12">
+          <div class="col-12 text-center">
             NEW ITEM
           </div>
         </div>
         <br>
-          <div class="row mx-auto">
+
+        <section id="products">
+          <?php include 'service/product.php'; ?>
+        </section>
+
+          <!-- <div class="row mx-auto">
             <div class="card col-6 col-md-4">
               <a href="http://edif.co.kr/bada_01/16762"><img src="img/new1.jpg" class="card-img-top" alt="..."></a>
               <div class="card-body">
@@ -149,7 +159,7 @@
                 <p class="card-text">바다릴대</p>
               </div>
             </div>
-          </div>
+          </div> -->
         <br>
 
 
