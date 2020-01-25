@@ -37,10 +37,7 @@
           <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">줄</a>
         </nav>
         <hr>
-              <?php
 
-              if(!isset($_SESSION['loginornot'])){ //세션값이 없을때=로그인전상태
-                ?>
                 <div class="row">
                 <!-- 로그인안에 좌측여백 -->
                   <div class="col-2"></div>
@@ -48,12 +45,11 @@
                     <div class="card-group">
             <div class="card-body" method="POST" action="loging.php">
               <!-- // POST방식으로 loging.php로 입력받은 데이터를 전송하는 태그 -->
-              <?php
-            }else{ //세션값이 존재 = "로그인된 상태"
-              echo "로그인중입니다.";
-            }
-            ?>
+              
                         <h4>로그인하기</h4>
+
+                        <form class="" action="loging.php" method="post">
+
                         <div class="form-group">
                           <small id="IDHelp" class="form-text text-muted">가입하신 아이디와 비밀번호를 입력해주세요.</small>
                           <label for="IDInPut"></label>
@@ -68,10 +64,11 @@
                           <label class="form-check-label" for="check1">아이디 저장</label>
                         </div>
 
-                        <a href="loging.php" class="btn btn-primary btn-lg col-md-8">로그인</a>
+                        <input type="submit" class="btn btn-primary btn-lg col-md-8">
                       </div>
                     </div>
                   </div>
+                </form>
 
                   <div class="col-sm-4">
                     <div class="card-group">
