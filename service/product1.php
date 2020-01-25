@@ -6,9 +6,10 @@ $url = "localhost";
 
 $conn = new mysqli($url, $id, $password, $db);
 $conn->query("set names utf8");
-$sql = "select * from detail";
+$sql = "select * from detail where main_flag = '1'";
 
 $result = $conn->query($sql);
+
 
 echo '<div class="row mx-auto">';
 

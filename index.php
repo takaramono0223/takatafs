@@ -37,31 +37,26 @@
 
   <body>
     <div class="row pt-5">
-      <!-- 좌측여백 -->
+<!-- 좌측여백 -->
       <div class="col-2">
       </div>
-      <!-- 본문 -->
+
+<!-- 본문 -->
       <div class="col-8">
-        <!-- 우상단메뉴 -->
+  <!-- 우상단메뉴 -->
         <div class="col-12" style="position:relative; text-align:right;">
           <a href="index.php">HOME</a> <a href="login.php">LOGIN</a> <a href="register.php">JOIN</a>
         </div>
-        <!-- 로고 -->
+  <!-- 로고 -->
         <div class="col-12" style="position:relative; text-align:center; width:100%;">
           <a href="index.php"><img src="img/logo.jpg"></a>
         </div>
         <hr>
-        <!-- 메뉴바 -->
-        <!-- <nav class="nav nav-pills nav-fill">
-          <a class="nav-item nav-link disabled" href="#">낚시대</a>
-          <a class="nav-item nav-link disabled" href="#">릴</a>
-          <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">줄</a>
-        </nav>
-        <hr> -->
+  <!-- 메뉴바 -->
         <section id="meue">
           <?php include 'template/menu.php'; ?>
         </section>
-        <!-- 슬라이드배너 -->
+  <!-- 슬라이드배너 -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -90,56 +85,31 @@
         </div>
         <br>
         <hr>
+        <?php echo $row['products_detail'] ?>
 
-        <!-- 베스트아이템 -->
+  <!-- 베스트아이템 -->
         <div class="row">
           <div class="col-12 text-center">
-            BEST ITEM
+            <h5>BEST ITEM</h5>
           </div>
         </div>
         <br>
-
-        <section id="products">
-          <?php include 'service/product.php'; ?>
+        <section id="product1">
+          <?php include 'service/product1.php'; ?>
         </section>
-
-          <!-- <div class="row mx-auto">
-            <div class="card col-6 col-md-4">
-              <a href="detail.php"><img src="img/best1.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">갤럭시 휘</h5>
-                <p class="card-text">민물민대</p>
-              </div>
-            </div>
-            <div class="card col-6 col-md-4">
-              <a href="http://edif.co.kr/minmul_01/16866"><img src="img/best2.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">체어맨 석권</h5>
-                <p class="card-text">민물민대</p>
-              </div>
-            </div>
-            <div class="card col-6 col-md-4">
-              <a href="http://edif.co.kr/minmul_06/2347"><img src="img/best3.jpg" class="card-img-top" alt="..."></a>
-              <div class="card-body">
-                <h5 class="card-title">COLINDEAN 콜린딘</h5>
-                <p class="card-text">베스루어대</p>
-              </div>
-            </div>
-          </div> -->
         <br>
         <hr>
-        <!-- 신규아이템 -->
+
+  <!-- 신규아이템 -->
         <div class="row">
           <div class="col-12 text-center">
-            NEW ITEM
+            <h5>NEW ITEM</h5>
           </div>
         </div>
         <br>
-
-        <section id="products">
-          <?php include 'service/product.php'; ?>
+        <section id="product2">
+          <?php include 'service/product2.php'; ?>
         </section>
-
           <!-- <div class="row mx-auto">
             <div class="card col-6 col-md-4">
               <a href="http://edif.co.kr/bada_01/16762"><img src="img/new1.jpg" class="card-img-top" alt="..."></a>
@@ -165,25 +135,13 @@
           </div> -->
         <br>
 
-
-        <!-- 하단메뉴 -->
-        <!-- <div class="row bg-light p-3">
-          <div class="col-8" style="text: seocondary;">
-            상호명 : 다나까피싱<br>
-            주소 : 서울특별시 영등포구 가마산로 315 1층<br>
-            통신판매업신고 : 제 2015-서울영등포-1455호 / 사업자등록번호 : 108-13-74543<br>
-            대표전화 : 02-846-9895 / FAX : 070-7779-9895<br>
-            Copyright © danakafishing. All rights reserved.
-          </div>
-          <div class="col-4" style="position:relative; text-align:center; width:100%;">
-            <img src="img/logo1.jpg">
-          </div>
-        </div> -->
+<!-- 하단메뉴 -->
         <section id="products">
           <?php include 'template/footer.php'; ?>
         </section>
       </div>
-      <!-- 우측여백 -->
+
+<!-- 우측여백 -->
       <div class="col-2">
       </div>
     <br>
