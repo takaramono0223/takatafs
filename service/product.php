@@ -14,11 +14,11 @@ echo '<div class="row mx-auto">';
 
 foreach ($result as $key => $value) {
 
-  echo '<div class="card col-6 col-md-4">';
-  echo "<img src='{$value['image']}' class='card-img-top' alt='...'>";
+  echo '<div class="card col-6 col-md-4 text-center">';
+  echo "<a href='detail.php?no={$value['no']}'><img src='{$value['image']}' class='card-img-top' alt='...'></a>";
   echo "<div class='card-body'>";
-  echo "<h5 class='card-title'><a href='detail.php?no={$value['no']}'>{$value['products_name']}</a></h5>";
-  echo "<p class='card-text'>가격:{$value['price']}<br>할인가:{$value['sale_price']}<br>{$value['reg_date']}</p>";
+  echo "<p class='card-text'>{$value['products_name']}</p>";
+  echo "<p class='card-text'>{$value['sale_price']}원</p>";
   echo '</div>';
   echo '</div>';
 }

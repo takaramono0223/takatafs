@@ -62,7 +62,7 @@ $row = $result->fetch_assoc();
             </div>
             <div class="col-5">
               <br>
-              <h4><?php echo $row['products_name'] ?></h4><br>
+              <h2><?php echo $row['products_name'] ?></h2><br>
               price : <del><?php echo $row['price'] ?>원</del><br>
               sale price : <?php echo $row['sale_price'] ?>원<br><br>
               <select class="form-control col-5" name="">
@@ -78,7 +78,10 @@ $row = $result->fetch_assoc();
               <a href="cart.php?products_name=<?= $row['products_name'] ?>&price=<?= $row['price'] ?>" class="btn btn-info"> <i class="material-icons">shopping_cart</i> 카트에담기 </a>
             </div>
           </div>
-          <br><hr><br>
+          <br><br>
+          DETAIL PRODUCT 상품 상세설명
+
+          <hr><br>
           <div class="col-12 text-center">
             <img src="<?php echo $row['products_detail'] ?>" width="85%">
           </div>
