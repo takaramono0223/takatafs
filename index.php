@@ -52,12 +52,15 @@
         </div>
         <hr>
         <!-- 메뉴바 -->
-        <nav class="nav nav-pills nav-fill">
+        <!-- <nav class="nav nav-pills nav-fill">
           <a class="nav-item nav-link disabled" href="#">낚시대</a>
           <a class="nav-item nav-link disabled" href="#">릴</a>
           <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">줄</a>
         </nav>
-        <hr>
+        <hr> -->
+        <section id="meue">
+          <?php include 'template/menu.php'; ?>
+        </section>
         <!-- 슬라이드배너 -->
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -164,7 +167,7 @@
 
 
         <!-- 하단메뉴 -->
-        <div class="row bg-light p-3">
+        <!-- <div class="row bg-light p-3">
           <div class="col-8" style="text: seocondary;">
             상호명 : 다나까피싱<br>
             주소 : 서울특별시 영등포구 가마산로 315 1층<br>
@@ -175,7 +178,10 @@
           <div class="col-4" style="position:relative; text-align:center; width:100%;">
             <img src="img/logo1.jpg">
           </div>
-        </div>
+        </div> -->
+        <section id="products">
+          <?php include 'template/footer.php'; ?>
+        </section>
       </div>
       <!-- 우측여백 -->
       <div class="col-2">
