@@ -43,31 +43,41 @@
         <br>
 
         <!-- 회원가입  -->
-	<form method="post" class="container" action="member_ok.php" onsubmit="return inputcheck()" >
+        <h1>Register</h1><hr>
+         <div class="row ">
+           <div class="col-2">
+           </div>
+           <div class="col-8">
+              <form method="post" class="container" action="member_ok.php" onsubmit="return inputcheck()" >
+                <div class="container">
+                  NAME:<input class="form-control w-60" type="text" size="35" name="name" placeholder="2~5자 한글영어만 입력" required>
+                  ID:
+                  <input class="form-control w-60" type="text" size="35" id='id' name="userid"  placeholder="4~10자 영소문자와 숫자로만 입력" required>
+                  PASSWORD:<br>
+                  <input class="form-control w-60" type="password" size="35" id='password' name="userpw" placeholder="8~12자 영대소문자와 숫자, 특수문자로만 입력" required>
+                  zipcode:<br>
+                  <input class="form-control w-60" type="text" size="13" name="zipcode" placeholder=" - 제외" required>
+                  address:<br>
+                  <input class="form-control w-60" type="text" size="35" name="address" placeholder="주소" required>
+                  TEL:<br>
+                  <input class="form-control w-60" type="text" size="35" name="tel" placeholder="- 제외" required>
+                  E-mail:<br>
+                  <input class="form-control w-60" type="text" size="35" name="email" required>
+                  <br>
 
-		<h1>Register</h1><hr></hr>
-   <div class="container"  text-align: center;>
-      NAME:<input class="form-control w-50" type="text" size="35" name="name" placeholder="2~5자 한글영어만 입력" required>
-      ID:
-      <input class="form-control w-50" type="text" size="35" id='id' name="userid"  placeholder="4~10자 영소문자와 숫자로만 입력" required>
-      PASSWORD:<br>
-      <input class="form-control w-50" type="password" size="35" id='password' name="userpw" placeholder="8~12자 영대소문자와 숫자, 특수문자로만 입력" required>
-      zipcode:<br>
-      <input class="form-control w-50" type="text" size="13" name="zipcode" placeholder=" - 제외" required>
-      address:<br>
-      <input class="form-control w-50" type="text" size="35" name="address" placeholder="주소" required>
-      TEL:<br>
-      <input class="form-control w-50" type="text" size="35" name="tel" placeholder="- 제외" required>
-      E-mail:<br>
-      <input class="form-control w-50" type="text" size="35" name="email" required>
-      <input type="submit"  class="btn btn-primary" value="Register" >
-    </div>
+                  <div class="col-12" style= "text-align:center;">
+                    <input type="submit"  class="btn btn-primary  btn-lg " value="Register" >
+                  </div>
 
-    <div id="msg"></div>
+                  </div>
+                </form>
+              </div>
+              <div id="msg"></div>
+            <br><br>
+          <div class="col-2">
+          </div>
+        </div>
 
-
-	</form>
-  <br><br>
   <!-- 하단고정 -->
   <section id="products">
     <?php include 'template/footer.php'; ?>
