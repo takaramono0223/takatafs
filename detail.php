@@ -1,7 +1,7 @@
 <?php
 $id = "root";
 $password = "";
-$db = "test";
+$db = "testdb";
 $url = "localhost";
 
 $no = $_GET['no'];
