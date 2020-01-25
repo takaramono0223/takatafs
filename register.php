@@ -47,7 +47,7 @@
 
 		<h1>Register</h1><hr></hr>
    <div class="container"  text-align: center;>
-      NAME:<input class="form-control w-50" type="text" size="35" name="name" placeholder="2~5자 한글만 입력" required>
+      NAME:<input class="form-control w-50" type="text" size="35" name="name" placeholder="2~5자 한글영어만 입력" required>
       ID:
       <input class="form-control w-50" type="text" size="35" id='id' name="userid"  placeholder="4~10자 영소문자와 숫자로만 입력" required>
       PASSWORD:<br>
@@ -69,19 +69,9 @@
 	</form>
   <br><br>
   <!-- 하단고정 -->
-  <div id="footer">
-    <div class="row bg-light">
-      <div class="col-10">
-        상호명 : 다나까피싱 / 대표이사 : 임연식<br>
-        주소 : 서울특별시 영등포구 가마산로 315 1층 / 사업자등록번호 : 108-13-74543<br>
-        통신판매업신고 : 제 2015-서울영등포-1455호 / 대표전화 : 02-846-9895 / FAX : 070-7779-9895<br>
-        개인정보책임자 : 임연식(dawoo63@hanmail.net)<br>
-        Copyright © danakafishing. All rights reserved.
-      </div>
-      <div class="col-2">
-        <img src="img/logo1.jpg">
-      </div>
-    </div>
+  <section id="products">
+    <?php include 'template/footer.php'; ?>
+  </section>
   </div>
 <!-- 우측여백 -->
 <div class="col-2">
