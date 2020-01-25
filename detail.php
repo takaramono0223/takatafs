@@ -57,29 +57,43 @@ $row = $result->fetch_assoc();
         <!-- 상품상세 -->
         <section class="container">
           <div class="row">
-            <div class="col-7">
+            <div class="col-7 text-center">
               <img src="<?php echo $row['image'] ?>" width="70%">
             </div>
             <div class="col-5">
               <br>
-              <h2><?php echo $row['products_name'] ?></h2><br>
-              price : <del><?php echo $row['price'] ?>원</del><br>
-              sale price : <?php echo $row['sale_price'] ?>원<br><br>
-              <select class="form-control col-5" name="">
-               <option value="">수량을 선택하세요</option>
-               <option value="">1</option>
-               <option value="">2</option>
-               <option value="">3</option>
-               <option value="">4</option>
-               <option value="">5</option>
-              </select>
+              <h5><?php echo $row['products_name'] ?></h5><hr><br>
+              <div class="row">
+                <div class="col-3">
+                  판매가<br><br>
+                  할인가<br><br>
+                  수량<br><br>
+                </div>
+                <div class="col-9">
+                  <del><?php echo $row['price'] ?>원</del><br><br>
+                  <?php echo $row['sale_price'] ?>원<br><br>
+                  <select class="form-control col-3" name="">
+                    <option value="">1</option>
+                    <option value="">2</option>
+                    <option value="">3</option>
+                    <option value="">4</option>
+                    <option value="">5</option>
+                  </select><br>
+                </div>
+              </div>
               <br><br>
-              <a href="#" class="btn btn-info"> <i class="material-icons">check_box</i> 바로구매 </a>
-              <a href="cart.php?products_name=<?= $row['products_name'] ?>&price=<?= $row['price'] ?>" class="btn btn-info"> <i class="material-icons">shopping_cart</i> 카트에담기 </a>
+              <div class="row">
+                <div class="col-6">
+                  <a href="login.php" class="btn btn-danger btn-block">BUY NOW</a>&nbsp;&nbsp;
+                </div>
+                <div class="col-6">
+                  <a href="cart.php?products_name=<?= $row['products_name'] ?>&price=<?= $row['price'] ?>" class="btn btn-info btn-block">TO CART</a>
+                </div>
+              </div>
             </div>
           </div>
           <br><br>
-          DETAIL PRODUCT 상품 상세설명
+          DETAIL PRODUCT
 
           <hr><br>
           <div class="col-12 text-center">
@@ -87,26 +101,14 @@ $row = $result->fetch_assoc();
           </div>
         </section>
 
-
-
-
-
+<!-- 하단메뉴 -->
         <br>
-        <!-- 하단메뉴 -->
-        <div class="row bg-light p-3">
-          <div class="col-8" style="text: seocondary;">
-            상호명 : 다나까피싱<br>
-            주소 : 서울특별시 영등포구 가마산로 315 1층<br>
-            통신판매업신고 : 제 2015-서울영등포-1455호 / 사업자등록번호 : 108-13-74543<br>
-            대표전화 : 02-846-9895 / FAX : 070-7779-9895<br>
-            Copyright © danakafishing. All rights reserved.
-          </div>
-          <div class="col-4" style="position:relative; text-align:center; width:100%;">
-            <img src="img/logo1.jpg">
-          </div>
-        </div>
+        <section id="products">
+          <?php include 'template/footer.php'; ?>
+        </section>
       </div>
-      <!-- 우측여백 -->
+
+<!-- 우측여백 -->
       <div class="col-2">
       </div>
     <br>

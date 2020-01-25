@@ -65,13 +65,13 @@
           </ol>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="img/banner1.jpg" class="d-block w-100" alt="...">
+              <a href="detail.php?no=1"><img src="img/banner1.jpg" class="d-block w-100" alt="..."></a>
             </div>
             <div class="carousel-item">
-              <img src="img/banner2.jpg" class="d-block w-100" alt="...">
+              <a href="detail.php?no=4"><img src="img/banner2.jpg" class="d-block w-100" alt="..."></a>
             </div>
             <div class="carousel-item">
-              <img src="img/banner3.jpg" class="d-block w-100" alt="...">
+              <a href="detail.php?no=2"><img src="img/banner3.jpg" class="d-block w-100" alt="..."></a>
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -85,7 +85,6 @@
         </div>
         <br>
         <hr>
-        <?php echo $row['products_detail'] ?>
 
   <!-- 베스트아이템 -->
         <div class="row">
