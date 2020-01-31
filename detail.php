@@ -33,28 +33,18 @@ $row = $result->fetch_assoc();
 
   <body>
     <div class="row pt-5">
-      <!-- 좌측여백 -->
+<!-- 좌측여백 -->
       <div class="col-2">
       </div>
-      <!-- 본문 -->
+
+<!-- 본문 -->
       <div class="col-8">
-        <!-- 우상단메뉴 -->
-        <div class="col-12" style="position:relative; text-align:right;">
-          <a href="index.php">HOME</a> <a href="login.php">LOGIN</a> <a href="register.php">JOIN</a>
-        </div>
-        <!-- 로고 -->
-        <div class="col-12" style="position:relative; text-align:center; width:100%;">
-          <a href="index.php"><img src="img/logo.jpg"></a>
-        </div>
-        <hr>
-        <!-- 메뉴바 -->
-        <nav class="nav nav-pills nav-fill">
-          <a class="nav-item nav-link disabled" href="#">낚시대</a>
-          <a class="nav-item nav-link disabled" href="#">릴</a>
-          <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true">줄</a>
-        </nav>
-        <hr>
-        <!-- 상품상세 -->
+  <!-- 로고/상단메뉴 -->
+      <section id="menu">
+        <?php include 'template/menu.php'; ?>
+      </section>
+
+  <!-- 상품상세 -->
         <section class="container">
           <div class="row">
             <div class="col-7 text-center">

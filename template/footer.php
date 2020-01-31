@@ -1,6 +1,6 @@
 <hr>
-<div class="row bg-light p-3">
-  <div class="col-8" style="text: seocondary;">
+<div class="row mx-auto bg-light p-3">
+  <div class="col-8" style="font-size:13px;color:#227093">
     상호명 : 다나까피싱<br>
     주소 : 서울특별시 영등포구 가마산로 315 1층<br>
     통신판매업신고 : 제 2015-서울영등포-1455호 / 사업자등록번호 : 108-13-74543<br>
