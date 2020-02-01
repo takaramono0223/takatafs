@@ -39,10 +39,14 @@ $row = $result->fetch_assoc();
 
 <!-- 본문 -->
       <div class="col-8">
-  <!-- 로고/상단메뉴 -->
-      <section id="menu">
-        <?php include 'template/menu.php'; ?>
-      </section>
+        <!-- 로고 -->
+            <section id="logo">
+              <?php include 'template/logo.php'; ?>
+            </section>
+        <!-- 메뉴 -->
+            <section id="menu">
+              <?php include 'template/menu.php'; ?>
+            </section>
 
   <!-- 상품상세 -->
         <section class="container">
