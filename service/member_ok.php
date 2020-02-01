@@ -20,11 +20,11 @@
  if($mysqli->query($sql)){
   echo 'success inserting';
   echo '<script>alert("회원가입이 완료되었습니다.")</script>';
-  header( "refresh:1.5; url=index.php" );
+  header( "refresh:1.5; url=../index.php" );
  }else{
    echo $sql;
   echo 'fail to insert sql';
   echo '<script>alert("회원가입이 실패했습니다.")</script>';
-  header( "refresh:2; url=login.php" );
+  header( "refresh:2; url=../login.php" );
  }
 ?>
