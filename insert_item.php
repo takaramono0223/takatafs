@@ -18,8 +18,6 @@
   </head>
 
   <body>
-
-  
     <div class="row pt-5">
       <!-- 좌측여백 -->
       <div class="col-2">
@@ -31,31 +29,31 @@
           <?php include 'template/menu.php'; ?>
         </section>
 
-        <!-- 회원가입  -->
-        <h1>Register</h1><hr>
+        <!-- 상품등록하기  -->
+        <h1>상품등록하기</h1><hr>
          <div class="row ">
            <div class="col-2">
            </div>
            <div class="col-8">
-              <form method="post" class="container" action="service/member_ok.php" onsubmit="return inputcheck()" >
+              <form method="post" class="container" action="service/save_item.php" onsubmit="return inputcheck()" >
                 <div class="container">
-                  NAME:<input class="form-control w-60" type="text" size="35" name="name" placeholder="2~5자 한글영어만 입력" required>
-                  ID:
-                  <input class="form-control w-60" type="text" size="35" id='id' name="userid"  placeholder="4~10자 영소문자와 숫자로만 입력" required>
-                  PASSWORD:<br>
-                  <input class="form-control w-60" type="password" size="35" id='password' name="userpw" placeholder="8~12자 영대소문자와 숫자, 특수문자로만 입력" required>
-                  zipcode:<br>
-                  <input class="form-control w-60" type="text" size="13" name="zipcode" placeholder=" - 제외" required>
-                  address:<br>
-                  <input class="form-control w-60" type="text" size="35" name="address" placeholder="주소" required>
-                  TEL:<br>
-                  <input class="form-control w-60" type="text" size="35" name="tel" placeholder="- 제외" required>
-                  E-mail:<br>
-                  <input class="form-control w-60" type="text" size="35" name="email" required>
+                  상품명:<input class="form-control w-60" type="text" size="35" name="products_name"  required>
+                  가격:
+                  <input class="form-control w-60" type="text" size="35" name="price"   required>
+                  세일가격:<br>
+                  <input class="form-control w-60" type="text" size="35"  name="sale_price"  required>
+                  카테고리:<br>
+                  <input class="form-control w-60" type="text" size="13" name="category"  required>
+                  메인상품사진:<br>
+                  <input type="file">  <br>
+                  디테일상품사진:<br>
+                  <input type="file">  <br>
+                  메인번호:<br>
+                  <input class="form-control w-60" type="text" size="35" name="main_flag" required>
                   <br>
 
                   <div class="col-12" style= "text-align:center;">
-                    <input type="submit"  class="btn btn-primary  btn-lg " value="Register" >
+                    <input type="submit"  class="btn btn-primary  btn-lg " value="상품등록" >
                   </div>
 
                   </div>
