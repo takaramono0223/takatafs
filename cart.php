@@ -13,6 +13,7 @@
   </head>
 
   <body>
+<<<<<<< HEAD
         <div class="row pt-5">
         <!-- 좌측여백 -->
           <div class="col-2">
@@ -27,6 +28,19 @@
         <div class="col-12" style="position:relative; text-align:center; width:100%;">
           <a href="index.php"><img src="img/logo.jpg"></a>
         </div>
+=======
+    <div class="row pt-5">
+<!-- 좌측여백 -->
+      <div class="col-2">
+      </div>
+
+<!-- 본문 -->
+      <div class="col-8">
+  <!-- 로고/상단메뉴 -->
+      <section id="menu">
+        <?php include 'template/menu.php'; ?>
+      </section>
+>>>>>>> edf4a40cbf5ab6f09f13968606aa4cdc47e10c63
 
 <!-- 상품상세 -->
     <?php

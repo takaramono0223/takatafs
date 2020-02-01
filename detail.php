@@ -47,30 +47,31 @@ $row = $result->fetch_assoc();
   <!-- 상품상세 -->
         <section class="container">
           <div class="row">
-            <div class="col-7 text-center">
-              <img src="<?php echo $row['image'] ?>" width="70%">
+            <div class="col-5 text-center">
+              <img src="<?php echo $row['image'] ?>" width="80%">
+            </div>
+            <div class="col-2">
             </div>
             <div class="col-5">
               <br>
-              <h5><?php echo $row['products_name'] ?></h5><hr><br>
+              <span style='font-size:16px;color:#57606f;'><h5><?php echo $row['products_name'] ?></h5></span><hr><br>
               <div class="row">
                 <div class="col-3">
-                  판매가<br><br>
-                  할인가<br><br>
-                  수량<br><br>
+                  <span style="font-size:15px;color:#999999;text-decoration:line-through;">판매가</span><br><br>
+                  <span style="font-size:15px;color:#333333;font-weight:bold;">할인가</span><br><br>
                 </div>
                 <div class="col-9">
-                  <del><?php echo $row['price'] ?>원</del><br><br>
-                  <?php echo $row['sale_price'] ?>원<br><br>
-                  <select class="form-control col-3" name="">
-                    <option value="">1</option>
-                    <option value="">2</option>
-                    <option value="">3</option>
-                    <option value="">4</option>
-                    <option value="">5</option>
-                  </select><br>
+                  <span style='font-size:15px;color:#999999;text-decoration:line-through;'><?php echo $row['price'] ?>원</span><br><br>
+                  <span style='font-size:15px;color:#333333;font-weight:bold;'><?php echo $row['sale_price'] ?>원</span><br><br>
                 </div>
               </div>
+              <hr>
+              <span style="font-size:12px;color:#d63031;font-weight:bold;">수량을 선택해주세요! (최소선택수량1개)</span>
+
+
+
+
+
               <br><br>
               <div class="row">
                 <div class="col-6">
@@ -92,7 +93,6 @@ $row = $result->fetch_assoc();
         </section>
 
 <!-- 하단메뉴 -->
-        <br>
         <section id="products">
           <?php include 'template/footer.php'; ?>
         </section>
