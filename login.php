@@ -32,7 +32,7 @@
                     <div class="card-group">
 
                         <h4>로그인하기</h4>
-                        <form class="" method="post" action="loging.php">
+                        <form class="" method="post" action="../service/loging.php">
                           <!-- // POST방식으로 loging.php로 입력받은 데이터를 전송하는 태그 -->
                         <div class="form-group">
                           <small id="IDHelp" class="form-text text-muted">가입하신 아이디와 비밀번호를 입력해주세요.</small>
@@ -48,7 +48,7 @@
                         </div>
                         <div class="form-group form-save">
                         <input type="submit" value="로그인하기" id="login" class="btn btn-primary btn-lg " >
-                            <label for="login" href="loging.php" > </label>
+                            <label for="login" href="../service/loging.php" > </label>
                       </div>
                     </div>
                   </div>
