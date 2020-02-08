@@ -32,36 +32,65 @@
         <!-- 상품등록하기  -->
         <h1>상품등록하기</h1><hr>
          <div class="row ">
-           <div class="col-2">
+           <div class="col-1">
            </div>
-           <div class="col-8">
-              <form method="post" class="container" action="service/save_item.php" onsubmit="return inputcheck()" >
-                <div class="container">
-                  상품명:<input class="form-control w-60" type="text" size="35" name="products_name"  required>
-                  가격:
-                  <input class="form-control w-60" type="text" size="35" name="price"   required>
-                  세일가격:<br>
-                  <input class="form-control w-60" type="text" size="35"  name="sale_price"  required>
-                  카테고리:<br>
-                  <input class="form-control w-60" type="text" size="13" name="category"  required>
-                  메인상품사진:<br>
-                  <input type="file">  <br>
-                  디테일상품사진:<br>
-                  <input type="file">  <br>
-                  메인번호:<br>
-                  <input class="form-control w-60" type="text" size="35" name="main_flag" required>
-                  <br>
+           <div class="col-10">
+              <form method="post" action="service/save_item.php" onsubmit="return inputcheck()" >
+
+                    <!-- 상품명 <input class="form-control col-5" type="text"  name="products_name"  required><br> -->
+
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-2 col-form-label">상품명</label>
+                      <div class="col-sm-10">
+                        <input class="form-control" type="text"  name="products_name"  required>
+                      </div>
+                    </div>
+
+
+
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-2 col-form-label">가격</label>
+                      <div class="col-sm-10">
+                        <input class="form-control" type="text" size="35" name="price"   required>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-2 col-form-label">세일가격</label>
+                      <div class="col-sm-10">
+                        <input class="form-control" type="text" size="35" name="sale_price"   >
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-2 col-form-label">카테고리</label>
+                      <div class="col-sm-10">
+                        <input class="form-control" type="text" size="35" name="category"   required>
+                      </div>
+                    </div>
+
+                    <div class="form-group row">
+                      <label for="inputPassword" class="col-sm-2 col-form-label">메인번호</label>
+                      <div class="col-sm-10">
+                        <input class="form-control" type="text" size="35" name="main_flag"   required>
+                      </div>
+                    </div>
+
+                    <!-- <div><span class="col-3">가격</span><span class="col-7"><input class="form-control col-5" type="text" size="35" name="price"   required></span></div><br> -->
+                    메인사진&nbsp;&nbsp;<input type="file" name="image" />  <br>
+                    디테일사진&nbsp;&nbsp;<input type="file" name="products_detail" />  <br>
+                    <br>
 
                   <div class="col-12" style= "text-align:center;">
                     <input type="submit"  class="btn btn-primary  btn-lg " value="상품등록" >
                   </div>
 
-                  </div>
+
                 </form>
               </div>
               <div id="msg"></div>
             <br><br>
-          <div class="col-2">
+          <div class="col-1">
           </div>
         </div>
 

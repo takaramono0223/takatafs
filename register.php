@@ -1,6 +1,3 @@
-<!-- <?php
-	include "/db.php";
-?> -->
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -19,7 +16,7 @@
 
   <body>
 
-  
+
     <div class="row pt-5">
       <!-- 좌측여백 -->
       <div class="col-2">
