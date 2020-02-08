@@ -13,22 +13,19 @@
   </head>
 
   <body>
-        <div class="row pt-5">
-        <!-- !!!!!!!좌측여백!!!!!!!! -->
-          <div class="col-2">
-          </div>
-        <!-- 본문 -->
-          <div class="col-8">
-            <!-- 우상단메뉴 -->
-                  <div class="col-12" style="position:relative; text-align:right;">
-                    <a href="index.php">HOME</a> <a href="login.php">LOGIN</a> <a href="register.php">JOIN</a>
-                  </div>
-        <!-- 로고/상단메뉴 -->
-        <div class="col-12" style="position:relative; text-align:center; width:100%;">
-          <a href="index.php"><img src="img/logo.jpg"></a>
-        </div>
+    <div class="row pt-5">
+<!-- 좌측여백 -->
+      <div class="col-2">
+      </div>
 
-<!-- 상품상세 -->
+<!-- 본문 -->
+      <div class="col-8">
+  <!-- 로고 -->
+      <section id="logo">
+        <?php include 'template/logo.php'; ?>
+      </section>
+
+  <!-- 상품상세 -->
     <?php
       session_start();
       if(!isset($_SESSION['products_name'])) {

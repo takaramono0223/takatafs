@@ -24,8 +24,8 @@
       <!-- 본문 -->
       <div class="col-8">
         <!-- 로고/상단메뉴 -->
-        <section id="menu">
-          <?php include 'template/menu.php'; ?>
+        <section id="logo">
+          <?php include 'template/logo.php'; ?>
         </section>
 
         <!-- 회원가입  -->
