@@ -29,6 +29,25 @@ $row = $result->fetch_assoc();
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"      rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <title></title>
+
+
+  <script>
+    function up() {
+      var getsu = document.getElementById("su");
+      document.getElementById("totalprice").innerHTML = (Number(getsu.value) + 1) * price.value;
+    }
+
+    function up1() {
+      var getsu = document.getElementById("quantity");
+      document.getElementById("total_price").innerHTML = (Number(quantity.value) + 1) * price.value;
+    }
+
+
+
+
+
+  </script>
+
   </head>
 
   <body>
@@ -67,16 +86,57 @@ $row = $result->fetch_assoc();
                 <div class="col-9">
                   <span style='font-size:15px;color:#999999;text-decoration:line-through;'><?php echo $row['price'] ?>원</span><br><br>
                   <span style='font-size:15px;color:#333333;font-weight:bold;'><?php echo $row['sale_price'] ?>원</span><br><br>
+                  <input type="hidden" id="price" value="<?php echo $row['sale_price'] ?>">
                 </div>
               </div>
               <hr>
-              <span style="font-size:12px;color:#d63031;font-weight:bold;">수량을 선택해주세요! (최소선택수량1개)</span>
+              <span style="font-size:12px;color:#d63031;font-weight:bold;">수량을 선택해주세요! (최소선택수량1개)</span><br>
+              <div class="form-group row">
+              <input type="text" class="form-control col-1" id="su" value="1"> <a id="up" onclick="up()" class="btn btn-info">↑</a>
+              <div id="totalprice"></div>
+            </div>
+            <br>
+
+
+            <table border="1" summary>
+                <caption>상품목록</caption>
+                  <colgroup>
+                    <col style="width:500px;">
+                    <col style="width:50px;">
+                    <col style="width:10px;">
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th scope="col">상품명</th>
+                      <th scope="col">상품수</th>
+                      <th scope="col">가격</th>
+                    </tr>
+                  </thead>
+                  <tbody class>
+                    <tr>
+                      <td>상품명</td>
+                      <td>
+                        <span class="quantity">
+                          <input id="quantity" name="" value="1" type="text">
+                          <a id="up1" onclick="up()"><img src="img/btn_count_up.gif"></a>
+                          <a id="down" onclick="down()"><img src="img/btn_count_down.gif"></a>
+                       </span>
+                     </td>
+                     <td class="right">
+                       <span class="quantity_price">
+                         <div id="total_price"></div>
+                         <input type="hidden" name="option_box_price" class="option_box_price" value="price" item_code="">
+                       </span>
+                     </td>
+                  </tr>
+                </tbody>
+              </table>
 
 
 
 
 
-              <br><br>
+
               <div class="row">
                 <div class="col-6">
                   <a href="login.php" class="btn btn-danger btn-block">BUY NOW</a>&nbsp;&nbsp;
@@ -106,5 +166,20 @@ $row = $result->fetch_assoc();
       <div class="col-2">
       </div>
     <br>
+
+    <script>
+      var getsu = document.getElementById("su");
+      var price = document.getElementById("price");
+      document.getElementById("totalprice").innerHTML = getsu.value * price.value;
+
+
+      var getsu = document.getElementById("quantity");
+      var price = document.getElementById("quantity_price");
+      document.getElementById("total_price").innerHTML = getsu.value * price.value;
+
+
+
+    </script>
+
   </body>
 </html>
